@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Walk | Online Shoping Website </title>
+    <link rel="icon" href="assets/images/logopic.png" type="image/png">
+    <link rel="shortcut icon" href="images/logopic.png " type="image/png">
+    <link rel="stylesheet" href="dist/css/cart.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script> 
+      $(function(){
+         $("#header").load("assets/html/header.html");
+         $("#footer").load("assets/html/footer.html");
+        });
+    </script>
+</head>
+<body>
+<div id="header"></div>
+<div class="small-container cart-page">
+    <table>
+      <tr style="height:30px !important;">
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+  
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="assets/images/nike1.png" alt="" />
+            <div>
+              <p>WNBA Logo</p>
+              <small>Price $10.00</small>
+              <br />
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" /></td>
+        <td>$10.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="assets/images/nike2.png" alt="" />
+            <div>
+              <p>Jordan t-shirt</p>
+              <small>Price $12.00</small>
+              <br />
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" /></td>
+        <td>$12.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="assets/images/nike3.png" alt="" />
+            <div>
+              <p>Nike Dri-FIT Rise 365</p>
+              <small>Price $12.00</small>
+              <br />
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" /></td>
+        <td>$15.00</td>
+      </tr>
+    </table>
+  
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>$10.00</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>$5.00</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$15.00</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>

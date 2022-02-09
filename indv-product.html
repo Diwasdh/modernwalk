@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Walk | Online Shoping Website </title>
+    <link rel="icon" href="assets/images/logopic.png" type="image/png">
+    <link rel="shortcut icon" href="images/logopic.png " type="image/png">
+    <link rel="stylesheet" href="dist/css/indv_product.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script> 
+      $(function(){
+         $("#header").load("assets/html/header.html");
+         $("#footer").load("assets/html/footer.html");
+        });
+    </script>
+</head>
+<body>
+  
+      <div id="header"></div>
+      <main>
+        <div class="container">
+          <div class="grid second-nav">
+            <div class="column-xs-12">
+              <nav>
+                <ol class="breadcrumb-list">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">T-shirt</a></li>
+                  <li class="breadcrumb-item active">Nike Dri-FIT</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="grid product">
+            <div class="column-xs-12 column-md-7">
+              <div class="product-gallery">
+                <div class="product-image">
+                  <img class="active" src="assets/images/dfit1.png">
+                </div>
+                <ul class="image-list">
+                  <li class="image-item"><img src="assets/images/dfit1.png"></li>
+                  <li class="image-item"><img src="assets/images/dfit2.png"></li>
+                  <li class="image-item"><img src="assets/images/dfit3.png"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="column-xs-12 column-md-5">
+              <h1>Nike Dri-FIT</h1>
+              <h2>Rs.15.99</h2>
+              <div class="description">
+                <p>The Nike Dri-FIT T-Shirt helps keep you dry and comfortable during workouts at any level with soft fabric that wicks sweat. A Swoosh logo with camo fill creates a commanding look.</p>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+          <div class="grid related-products">
+            <div class="column-xs-12">
+              <h3>You may also like</h3>
+            </div>
+            <div class="column-xs-12 column-md-4">
+              <img src="assets/images/nike1.png">
+              <h4>WNBA Logo</h4>
+              <p class="price">Rs.17.95</p>
+            </div>
+            <div class="column-xs-12 column-md-4">
+              <img src="assets/images/nike2.png">
+              <h4>Jordan</h4>
+              <p class="price">Rs.21.99</p>
+            </div>
+            <div class="column-xs-12 column-md-4">
+              <img src="assets/images/nike3.png">
+              <h4>Nike Dri-FIT Rise 365</h4>
+              <p class="price">Rs.24.95</p>
+            </div>
+          </div>
+        </div>
+        
+      </main>
+      
+      <script src="assets/js/indv-product.js"></script>
+      <div id="footer"></div>
+</body>
+</html>

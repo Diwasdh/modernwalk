@@ -1,0 +1,103 @@
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar{
+    display: flex !important;
+    align-items: center !important;
+    padding: 16px !important;
+    height: 13vh !important;
+}
+
+#na{
+    flex: 1 ;
+    text-align: right;
+}
+#na ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+#na ul li{
+    display: inline-block;
+    margin-right: 12px;
+    transition: transform .3s;
+}
+
+#na ul li:hover{
+    transform: scale(1.1);
+}
+
+#na ul li a{
+    text-decoration: none;
+    color: #26001b;
+    transition: 0.3s;
+}
+
+#na ul li a:hover{
+    color: whitesmoke !important;
+}
+
+#cart:hover{
+    cursor: pointer;
+}
+#logo:hover{
+    cursor: pointer;
+}
+
+.header{
+    height: 15vh;
+    overflow: hidden;
+    background: linear-gradient(-45deg,#e4fbff,#b8b5ff, #ec5789, #c15050);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+@keyframes gradient  {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+</style>
+
+
+
+<div class="header" >
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"> 
+                <a href="./index.html"> <img src="assets/images/logopic.png" width="90px" height="90px" id="logo" ></a>
+            </div>
+            <nav id="na">
+                <ul>
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="product-page.html"> Product </a></li>
+                    <li><a href="aboutus.html"> About Us</a></li>
+                    <li><a href="contact-us.html"> Contact Us </a></li>
+                    <li><a href="signup-login.html"> Account </a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="assets/images/cart.png" height="35px" width="35px" id="cart"></a>
+        </div>
+</div>
+</div>

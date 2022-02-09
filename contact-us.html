@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Walk | Online Shoping Website </title>
+    <link rel="icon" href="assets/images/logopic.png" type="image/png">
+    <link rel="shortcut icon" href="images/logopic.png " type="image/png">
+    <link rel="stylesheet" href="dist/css/contact-us.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script> 
+      $(function(){
+         $("#header").load("assets/html/header.html");
+         $("#footer").load("assets/html/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+    <div class="container">  
+        <form id="contact" action="" method="post">
+          <h3 style="color: #ec5789 !important;">Quick Contact</h3>
+          <h4>Contact us today, and get reply with in 24 hours!</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+    
+        
+      </div>
+    </main>
+    <div id="footer"></div>
+</body>
+</html>

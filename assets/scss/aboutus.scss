@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    &::before, &::after {
+      box-sizing: border-box;
+    }
+    margin: 0;
+    padding: 0;
+    }
+  $text: #333;
+
+  body {
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: $text;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .about-section{
+    overflow: hidden;
+    padding: 100px 0;
+    background-size: 400% 400%;
+    }
+    .wrap{
+        background: linear-gradient(-45deg,#e4fbff,#b8b5ff, #ec5789, #c15050) !important ;
+        height: 100vh;
+        overflow: hidden !important;    
+    }
+    .header{
+        background: linear-gradient(-45deg,#b8b5ff, #ec5789, #c15050) !important;
+        overflow: hidden !important;
+      
+    }
+ 
+   
+
+    .inner-container{
+        width: 55%;
+        float: right;
+        background-color: #fdfdfd;
+        padding: 150px;
+        h1{
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+    }
+
+
+
+    .text{
+        
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 13px;
+        color: #222 !important;
+    }
+
+  
+
+    @media screen and (max-width:1200px){
+        .inner-container{
+            padding: 80px;
+        }
+    }
+
+    @media screen and (max-width:1000px){
+        .about-section{
+            background-size: 100%;
+            padding: 100px 40px;
+        }
+        .inner-container{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:600px){
+        .about-section{
+            padding: 0;
+        }
+        .inner-container{
+            padding: 60px;
+        }
+    }

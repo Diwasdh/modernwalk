@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    height: 15vh;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform .25s;
+}
+
+nav ul li:hover{
+    transform: scale(1.05);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #26001b; 
+    transition: color 0.25s;
+}
+
+
+a:hover {
+  color: whitesmoke;
+  
+}
+
+#cart:hover{
+    cursor: pointer;
+}
+#logo:hover{
+    cursor: pointer;
+}
+
+p{
+    color: #26001b;
+}
+
+#name{
+    cursor:pointer;
+    opacity: 0;
+    position: relative;
+    align-self:center ;
+    margin-top: 8px;
+    transition: all 0.5s;
+}
+
+#product{
+    transition: transform 1s;
+}
+
+#product:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    
+}
+#product:hover +#name{
+    
+    opacity: 1;
+}
+
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   text-align: center;
+
+}
+
+.container .row{
+    height: 85vh;
+    max-width: 100%;
+}
+
+
+.cover-col{
+    flex-basis: 50%;
+    min-width: 300px; 
+}
+
+
+
+.cover-col img{
+    max-width: 100%;
+    padding: 45px 0;
+    size: 100%;      
+}
+
+.cover-col h1{
+    font-size: 45px;
+    line-height: 65px;
+    margin: 10px 0;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    background: rgb(136, 71, 71);
+    color:black;
+    padding: 8px 30px;
+    margin: 15px 0;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: background 0.5s;
+    transition: transform 1s;
+    margin-bottom: 25%;
+   
+}
+.btn:hover
+{
+    background: black;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+.header{
+    background: linear-gradient(-45deg,#e4fbff,#b8b5ff, #ec5789, #c15050);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    max-height: 100vh;
+    overflow: hidden;
+  height: 100vh;
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header .row{
+    margin-top: 0px;
+}
+ 
+.category{
+    margin: 30px 0;
+}
+
+
+.category-col{
+    flex-basis: 30%;
+    min-width: 250px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    
+   
+    
+}
+
+.category-col img{
+    
+    min-width: 100%;
+    padding: 10px;
+    max-width: 100%;
+    display: b;
+}
+
+.category .category-col{
+   overflow-wrap: normal;
+}
+
+.small-container
+{
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.product-col{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 220px;
+    margin-bottom: 25px;
+    transition: transform 0.5s;
+}
+
+.product-col:hover
+{
+    transform: scale(1.025);
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15);
+}
+
+.product-col img{
+    width: 100%;
+    
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    margin: 0 auto 60px;
+    line-height: 40px;
+    padding-bottom: 8px;
+    color: teal;
+}
+
+.title::after{
+    content: '';
+    background: red;
+    width: 100px;
+    height: 8px;
+    border-radius: 5px;
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-col i{ 
+   font-style: normal;
+   font-weight: bold;
+    font-size: 28px;
+    color: #9c47fc;
+    background: -webkit-linear-gradient(#23a6d5, #23d5ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.star::before{
+    content: "\2605";
+}
+
+.star.active ~ .star::before{
+    content:"\2606";
+}
+.rating:hover .star::before{
+    content: "\2605";
+}
+.star:hover ~ .star::before{
+    content: "\2606";
+}
+
+
+.star1::before{
+    content: "\2605";
+}
+
+.star1.active ~ .star1::before{
+    content:"\2606";
+}
+.rating2:hover .star1::before{
+    content: "\2605";
+}
+.star1:hover ~ .star1::before{
+    content: "\2606";
+}
+
+.star2::before{
+    content: "\2605";
+}
+
+.star2.active ~ .star2::before{
+    content:"\2606";
+}
+.rating3:hover .star2::before{
+    content: "\2605";
+}
+.star2:hover ~ .star2::before{
+    content: "\2606";
+}
+
+.star3::before{
+    content: "\2605";
+}
+
+.star3.active ~ .star3::before{
+    content:"\2606";
+}
+.rating4:hover .star3::before{
+    content: "\2605";
+}
+.star3:hover ~ .star3::before{
+    content: "\2606";
+}
+
+.exclusive-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    max-height: 100vh;
+    overflow-wrap: hidden;
+    margin: auto;
+    padding: 50px;
+
+}
+
+.text-exclusive-col p{
+    font-size: 15px;
+  color: rgba(175, 53, 59, 0.9);
+  padding-top: 1px;
+
+}
+.exclusive-containe .row{
+    position: relative;
+    
+    
+}
+
+.text-exclusive-col{
+    flex-basis: 45%;
+    padding: 10px;
+    min-width: 220px;
+    margin-bottom: 25px;
+}
+
+
+.image-exclusive-col{
+    flex-basis: 55%;
+    padding: 10px;
+    min-width: 220px;
+    margin-bottom: 15px;
+    
+}
+
+
+.image-exclusive-col img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:600px) {
+    .exclusive-container .image-exclusive-col #exclusive-img {
+      display: none;
+    }
+  }
+
+.exclusive-wrapper{
+    background: linear-gradient(-45deg,#161415,#241F22, #A4ABB8, #E9F0EF);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    max-height: 75vh;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.text-exclusive-col h2{
+    padding-top: 15%;
+    color: #7B341F;
+}
+.line{
+    height: 2px;
+    background-color: black;
+}
+
+/*  Footer    */
+.footer{
+    height: 25vh;
+   background-color: black;
+    width: 100%;
+    overflow: hidden;
+    align-content: center;
+    align-items: center;
+}
+
+.footer img{
+    display: relative;
+    float: right;    
+    margin-top: 25px;
+    margin-right: 3%;
+    background: rgba(145, 138, 138,0.6);
+} 
+.logos{
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    height: 10vh;
+    width: 15vh;
+    float: right;
+    top: 35px;
+    right: 1%;
+    opacity: 1.5;
+    margin-top: 30px;
+}
+.logos h3{
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 0;
+    text-align: left;
+}
+
+
+#facebook{
+    color: #4267B2;
+    transition: transform 0.5s;
+    padding-right: 5px;
+    
+}
+#facebook:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#instagram{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.5s;
+    
+}
+#instagram:hover{
+    padding-right: 5px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.address{
+display: inline-block;
+position: relative;
+height: 20vh;
+overflow: hidden;
+top: 45px;
+left :5%;
+}
+.address :hover{
+    cursor: default;
+}
+
+.address h3{
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 0;
+    text-align: left;
+}
+
+.contacts{
+    display: inline-block;
+    position: relative;
+    height: 20vh;
+    overflow: hidden;
+    top: 45px;
+    left :15%;
+}
+
+.contacts :hover{
+    cursor: default;
+}
+
+.contacts h3{
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 0;
+    text-align: left;
+}
+
+
